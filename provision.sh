@@ -158,6 +158,9 @@ if [ ! -d $DOCUMENT_ROOT ] || [ ! -f $DOCUMENT_ROOT/index.php ]; then
     git update-index --assume-unchanged cache/site_settings.php
     git update-index --assume-unchanged cache/staff_settings.php
     git update-index --assume-unchanged cache/staff_settings2.php
+    git update-index --assume-unchanged pic.tar.tar.gz
+    git update-index --assume-unchanged Log_Viewer.tar.gz
+    git update-index --assume-unchanged GeoIP.tar.gz
 
     cd $DOCUMENT_ROOT
 

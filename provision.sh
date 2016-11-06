@@ -133,7 +133,7 @@ if [ ! -d $DOCUMENT_ROOT ] || [ ! -f $DOCUMENT_ROOT/index.php ]; then
         echo "cache/staff_setttings.php" >> .gitignore
         echo "cache/staff_setttings2.php" >> .gitignore
         echo "install/*" >> .gitignore
-        echo "imddb/cache/*" >> .gitignore
+        echo "imdb/cache/*" >> .gitignore
         echo "rss.xml" >> .gitignore
         echo "rssdd.xml" >> .gitignore
         echo "torrents/*" >> .gitignore
@@ -158,7 +158,7 @@ if [ ! -d $DOCUMENT_ROOT ] || [ ! -f $DOCUMENT_ROOT/index.php ]; then
     git update-index --assume-unchanged cache/site_settings.php
     git update-index --assume-unchanged cache/staff_settings.php
     git update-index --assume-unchanged cache/staff_settings2.php
-    git update-index --assume-unchanged pic.tar.tar.gz
+    git update-index --assume-unchanged pic.tar.gz
     git update-index --assume-unchanged Log_Viewer.tar.gz
     git update-index --assume-unchanged GeoIP.tar.gz
 

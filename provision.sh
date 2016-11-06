@@ -130,8 +130,7 @@ if [ ! -d $DOCUMENT_ROOT ] || [ ! -f $DOCUMENT_ROOT/index.php ]; then
         echo "include/ann_config.php" > .gitignore
         echo "include/config.php" >> .gitignore
         echo "include/backup/*" >> .gitignore
-        echo "cache/staff_setttings.php" >> .gitignore
-        echo "cache/staff_setttings2.php" >> .gitignore
+        echo "cache/*" >> .gitignore
         echo "install/*" >> .gitignore
         echo "imdb/cache/*" >> .gitignore
         echo "rss.xml" >> .gitignore

@@ -17,6 +17,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Enable cachier plugin if available (cache os packages) http://fgrehm.viewdocs.io/vagrant-cachier/usage/
   if Vagrant.has_plugin?("vagrant-cachier")
+      puts "Enable vagrant-cachier on box scope."
       config.cache.scope = :box
   end
 

@@ -14,6 +14,12 @@ cleanwww=String(DO_CLEAN_WWW)
 gitrepo=String(DO_GIT_REPO)
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+
+  # Enable cachier plugin if available (cache os packages) http://fgrehm.viewdocs.io/vagrant-cachier/usage/
+  if Vagrant.has_plugin?("vagrant-cachier")
+      config.cache.scope = :box
+  end
+
   config.vm.define "u232"  do |u232|
       u232.vm.hostname = "u232v5.vagrant.vm"
       u232.vm.box_url = "https://atlas.hashicorp.com/ARTACK/boxes/debian-jessie"

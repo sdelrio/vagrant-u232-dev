@@ -25,7 +25,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
             vb.customize ["modifyvm", :id, "--natnet1", "192.168.44/24"]
             vb.customize ["modifyvm", :id, "--usb", "off"]
             vb.customize ["modifyvm", :id, "--mouse", "ps2"]
-            vb.customize ["modifyvm", :id, "--mouse", "keyboard"]
+            vb.customize ["modifyvm", :id, "--keyboard", "ps2"]
       end
       u232.vm.provision :shell, :path => "provision.sh", :args => "-i "+ install + " -x " + xbt + " -c " + cleanwww + " -g " + gitrepo
       #u232.vm.provision :shell, :path => "provision.sh", :args => "-install" + Integer(DO_INSTALL)

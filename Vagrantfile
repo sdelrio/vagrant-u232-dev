@@ -43,7 +43,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       end
       u232.vm.network "forwarded_port", guest: 8025, host: 8025 # mailhog web interface
       u232.vm.network "forwarded_port", guest: 1025, host: 1025 # mailhog smtp
-      u232.vm.synced_folder "html", "/var/www/html", owner: "www-data", group: "www-data"
+      u232.vm.synced_folder "html", "/var/www/html", owner: "www-data", group: "www-data", :create => true
   end
 
 # solo por si queremos entrar desde equipos de nuestra LAN sin tener que poner :8080 al final de la URL
